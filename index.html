@@ -480,6 +480,21 @@ function aktipesan11(){
       setTimeout(tombol,800); // show the Reply button at the end
     },}).go();
 }
+		vketik7=pesan7.innerHTML;pesan7.innerHTML="";
+function aktipesan7(){
+  pesan6.style="display:none";
+  wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=4;setTimeout(ftmuncul,300);
+  new TypeIt("#pesan7", {
+    strings: ["" + vketik7], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
+    afterComplete: function(){
+      pesan7.innerHTML=vketik7;
+      setTimeout(aktipesan8,800);        // 👈 go to next line
+      setInterval(berjatuhan,200);
+      fthilang();ftganti=5;setTimeout(ftmuncul,300);
+    },}).go();
+}
+
 
   //vketik8=pesan8.innerHTML;pesan8.innerHTML="";
   function aktipesan8(){
