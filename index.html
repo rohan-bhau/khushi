@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <meta charset='UTF-8' />
@@ -184,19 +185,18 @@
                     <li id="lv4">💗</li>
                 </div>
 
-<p id="pesan2"></p>
-<p id="pesan3"><b style="font-size:18px;">Do You Know? 🫢</b></p>
-<p id="pesan4" class="sty2b"><b>There Are Three Ways to<br>Be <span style="color:pink">Beautiful</span>.. 🫣</b></p>
-<p id="ptimer" class="sty2b">⏳&nbsp;<b id="initimer">3</b></p>
-<p id="pesan5" class="sty2b left"><b style="font-size:18px;">Why Are You Waiting?! 😝</b></p>
-<p id="pesan6" class="sty2b left"><b>You're Already Beautiful 😆🩷</b></p>
-<p id="pesan7" class="sty2b left"><b><span style="color:pink">Very Beautiful</span></b></p>
-<p id="pesan8"  class="sty2b left"><b>And your smile is the best which i have ever seen</b></p>
-<p id="pesan9"  class="sty2b left"><b>So forget all the problems and start smiling</b></p>
-<p id="pesan10" class="sty2b left"><b>i'm miss your smiling face yaar 😔 <br> Also your voice 😔</b></p>
-<p id="pesan11" class="sty2b left"><b>I wanna say you something, am i permitted?? <br> I hope you will reply 😅</b></p>
-
-
+                <p id="pesan2"></p>
+                <p id="pesan3"><b style="font-size:18px;">Do You Know? 🫢</b></p>
+                <p id="pesan4" class="sty2b"><b>There Are Three Ways to<br>Be <span style='color:pink'>Beautiful</span>.. 🫣</b></p>
+                <p id="ptimer" class="sty2b">⏳&nbsp;<b id="initimer">3</b></p>
+                <p id="pesan5" class="sty2b left"><b style="font-size:18px;">Why Are You Waiting?! 😝</b></p>
+                <p id="pesan6" class="sty2b left"><b>You're Already Beautiful 😆🩷</b></p>
+                <p id="pesan7" class="sty2b left"><b><span style='color:pink'>Very Beautiful</span> </b> </p>
+                <p id="pesan8" class="sty2b left"><b>And your smile is the best smile which I have ever seen </b></p>
+                <p id="pesan9" class="sty2b left"><b><span style='color:pink'>So forget all problems and start smiling...</span> </b></p>
+                <p id="pesan10" class="sty2b left"><b>I miss your smiling face yaar😔</b><br><b>Also your voice</b></p>
+                <p id="pesan11" class="sty2b left"><b>Btw,, <br> I wanna say you something, am I permitted??</b></p>
+                <p id="pesan12" class="sty2b left"><b>I hope you will Reply</b></p>
 
                 <!-- Continue Button -->
                 <p id="opsL">Click to Continue</p>
@@ -238,7 +238,7 @@
         }
 
         // Final Question Variable
-        var tanya = 'Do You Miss Me? 😶❤️';
+        var tanya = 'Do You Remember Me? 😶❤️';
         var opstanya = 'Come on, answer 😆';
         var tompositif = 'Miss You';
         var tomnegatif = 'Nope';
@@ -424,80 +424,88 @@
   strings: ["" + vketik7], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
     pesan7.innerHTML=vketik7;
-    //setTimeout(aktipesan8,300);
+    setTimeout(aktipesan8,300);
     setInterval(berjatuhan,200);
     fthilang();ftganti=5;setTimeout(ftmuncul,300);
   },}).go();
   }
-		// 8
-vketik8 = pesan8.innerHTML; pesan8.innerHTML = "";
-function aktipesan8(){
+    vketik8=pesan8.innerHTML;pesan8.innerHTML="";
+    function aktipesan8(){
   pesan7.style="display:none";
-  wallpaper.style="transform: scale(1);";
-  new TypeIt("#pesan8", {
-    strings: ["" + vketik8], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
+    wallpaper.style="transform: scale(1.5);";
+    fthilang();ftganti=5;setTimeout(ftmuncul,300);
+    new TypeIt("#pesan8", {
+    strings: ["" + vketik8], startDelay: 1, speed: 80, cursor: true, waitUntilVisible: true, lifelike: true,
     afterComplete: function(){
       pesan8.innerHTML=vketik8;
-      setTimeout(aktipesan9,800);
+      setTimeout(aktipesan9,300);
+setInterval(berjatuhan,200);
+      fthilang();ftganti=6;setTimeout(ftmuncul,300);
+      //setTimeout(pertanyaan, 1000);
     },}).go();
-}
-
-// 9
-vketik9 = pesan9.innerHTML; pesan9.innerHTML = "";
-function aktipesan9(){
+    }
+    vketik9=pesan9.innerHTML;pesan9.innerHTML="";
+  function aktipesan9(){
   pesan8.style="display:none";
   wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=4;setTimeout(ftmuncul,300);
   new TypeIt("#pesan9", {
-    strings: ["" + vketik9], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
-    afterComplete: function(){
-      pesan9.innerHTML=vketik9;
-      setTimeout(aktipesan10,800);
-    },}).go();
-}
-
-// 10
-vketik10 = pesan10.innerHTML; pesan10.innerHTML = "";
-function aktipesan10(){
+  strings: ["" + vketik9], startDelay: 1, speed: 80, cursor: true, waitUntilVisible: true, lifelike: true,
+  afterComplete: function(){
+    pesan9.innerHTML=vketik9;
+    setTimeout(aktipesan10,300);
+    setInterval(berjatuhan,200);
+    fthilang();ftganti=5;setTimeout(ftmuncul,300);
+  },}).go();
+  } 
+    vketik10=pesan10.innerHTML;pesan10.innerHTML="";
+  function aktipesan10(){
   pesan9.style="display:none";
-  wallpaper.style="transform: scale(1);";
-  new TypeIt("#pesan10", {
-    strings: ["" + vketik10], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
-    afterComplete: function(){
-      pesan10.innerHTML=vketik10;
-      setTimeout(aktipesan11,800);
-    },}).go();
-}
-
-// 11 (last)
-vketik11 = pesan11.innerHTML; pesan11.innerHTML = "";
-function aktipesan11(){
-  pesan10.style="display:none";
-  wallpaper.style="transform: scale(1.5);";
-  new TypeIt("#pesan11", {
-    strings: ["" + vketik11], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
-    afterComplete: function(){
-      pesan11.innerHTML=vketik11;
-      setTimeout(tombol,800); // show the Reply button at the end
-    },}).go();
-}
-		vketik7=pesan7.innerHTML;pesan7.innerHTML="";
-function aktipesan7(){
-  pesan6.style="display:none";
   wallpaper.style="transform: scale(1.5);";
   fthilang();ftganti=4;setTimeout(ftmuncul,300);
-  new TypeIt("#pesan7", {
-    strings: ["" + vketik7], startDelay: 1, speed: 33, cursor: true, waitUntilVisible: true, lifelike: true,
-    afterComplete: function(){
-      pesan7.innerHTML=vketik7;
-      setTimeout(aktipesan8,800);        // 👈 go to next line
-      setInterval(berjatuhan,200);
-      fthilang();ftganti=5;setTimeout(ftmuncul,300);
-    },}).go();
-}
+  new TypeIt("#pesan10", {
+  strings: ["" + vketik10], startDelay: 1, speed: 80, cursor: true, waitUntilVisible: true, lifelike: true,
+  afterComplete: function(){
+    pesan10.innerHTML=vketik10;
+    setTimeout(aktipesan11,300);
+    setInterval(berjatuhan,200);
+    fthilang();ftganti=5;setTimeout(ftmuncul,300);
+  },}).go();
+  } 
+    vketik11=pesan11.innerHTML;pesan11.innerHTML="";
+  function aktipesan11(){
+  pesan10.style="display:none";
+  wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=4;setTimeout(ftmuncul,300);
+  new TypeIt("#pesan11", {
+  strings: ["" + vketik11], startDelay: 1, speed: 80, cursor: true, waitUntilVisible: true, lifelike: true,
+  afterComplete: function(){
+    pesan11.innerHTML=vketik11;
+    setTimeout(aktipesan12,300);
+    setInterval(berjatuhan,200);
+    fthilang();ftganti=5;setTimeout(ftmuncul,300);
+  },}).go();
+  }
+    vketik12=pesan12.innerHTML;pesan12.innerHTML="";
+  function aktipesan12(){
+  pesan11.style="display:none";
+  wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=4;setTimeout(ftmuncul,300);
+  new TypeIt("#pesan12", {
+  strings: ["" + vketik12], startDelay: 1, speed: 40, cursor: true, waitUntilVisible: true, lifelike: true,
+  afterComplete: function(){
+    pesan12.innerHTML=vketik12;
+    setTimeout(aktipesan13,300);
+    setInterval(berjatuhan,200);
+    fthilang();ftganti=5;setTimeout(ftmuncul,300);
+    tombol();
+    //setTimeout(pertanyaan, 1000);
+  },}).go();
+  }
 
 
   //vketik8=pesan8.innerHTML;pesan8.innerHTML="";
-  function aktipesan8(){
+  /*function aktipesan8(){
   wallpaper.style="transform: scale(1);";
   fthilang();ftganti=5;setTimeout(ftmuncul,300);
   new TypeIt("#pesan8", {
@@ -507,7 +515,7 @@ function aktipesan7(){
     //tombol();
     setInterval(berjatuhan,200);
   },}).go();
-  }
+  }*/
 
   var slov=0;
   document.getElementById("lv1").onclick = function() {lv1.style="opacity:0";slov+=1;this.onclick=null;checkslov();}
